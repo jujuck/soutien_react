@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './task.css'
 
-const Task = () => {
+const Task = ({ title, note, delay }) => {
+  //console.log(props)
   return (
-    <div>
-      <h4>Titre de la tache</h4>
-      <p>Importance: 3/5</p>
-      <p>Delai: 1 semaine</p>
+    <div className="task">
+      <h4>{title}{/** Titre en props */}</h4>
+      <p>Importance: {note}{/* Note en props*/}/5</p>
+      <p>Delai: {delay}{/** Délai en props */}</p>
     </div>
   )
 }

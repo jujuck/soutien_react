@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <NavBar />
       <section className="listOfStack">
-        <Stack />
+        <Stack title="A faire" />{/* Titre à faire Stack({ title: "A faire"})*/}
+        <Stack title="En cours" />{/* Titre en cours */}
+        <Stack title="Réalisé" />{/* Titre réalisé */}
       </section>
     </div>
   )
